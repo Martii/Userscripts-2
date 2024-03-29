@@ -3,13 +3,14 @@
 // @namespace     sizzlemctwizzle
 // @description   Attempts to test every aspect of GM_config.
 // @license       MIT
-// @version       2.3.0.3
+// @version       2.3.0.4
 // @grant         GM_getValue
 // @grant         GM_setValue
 // @grant         GM.getValue
 // @grant         GM.setValue
 // @require       https://openuserjs.org/src/libs/sizzle/GM_config.min.js
 // @include       https://openuserjs.org/scripts/sizzle/The_GM_config_Unit_Test
+// @match         https://openuserjs.org/scripts/sizzle/The_GM_config_Unit_Test
 // @homepageURL   https://github.com/sizzlemctwizzle/UserScripts/blob/master/gm_config_unit_test.user.js
 // @updateURL     https://openuserjs.org/meta/sizzle/The_GM_config_Unit_Test.meta.js
 // ==/UserScript==
@@ -19,8 +20,9 @@
 // @collaborator Marti
 // ==/OpenUserJS==
 
-/* jshint esversion: 5 */
+/* jshint esversion: 8 */
 /* globals GM_config, GM_configStruct */
+
 var fieldDefs = {
     'name': {
         'section': [GM_config.create('Personal Info About Yourself'), 'We need this info to do stuff'],
